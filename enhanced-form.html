@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Week 2 Assignment - Enhancing HTML5 Content & Mastering Forms for PLP Academy">
+  <meta name="author" content="Muhammad Abubakar">
+  <title>Enhancing HTML5 Content & Mastering Forms</title>
+</head>
+<body>
+  <header>
+    <h1>Enhancing HTML5 Content & Mastering Forms</h1>
+    <p>This web page demonstrates advanced HTML5 elements, including lists, tables, media, and a fully functional form.</p>
+  </header>
+
+  <main>
+    <!-- Section 1: Lists, Tables, and Media -->
+    <section aria-labelledby="content-section">
+      <h2 id="content-section">HTML5 Content Elements</h2>
+
+      <article>
+        <h3>Popular Web Technologies</h3>
+        <ul>
+          <li>HTML5 — for structuring web content</li>
+          <li>CSS3 — for styling and layout design</li>
+          <li>JavaScript — for interactivity and dynamic behavior</li>
+        </ul>
+
+        <h3>Technology Comparison Table</h3>
+        <table border="1">
+          <caption>Web Technologies Overview</caption>
+          <thead>
+            <tr>
+              <th>Technology</th>
+              <th>Primary Purpose</th>
+              <th>Example Usage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML</td>
+              <td>Structure</td>
+              <td>Used in every web page</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>Styling</td>
+              <td>Design and layout</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>Interactivity</td>
+              <td>Animations and logic</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Media Example</h3>
+        <figure>
+          <img src="webdev.jpg" alt="Web Development Illustration" width="400">
+          <figcaption>Modern Web Development Workflow</figcaption>
+        </figure>
+
+        <audio controls>
+          <source src="intro.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <video controls width="400">
+          <source src="demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </article>
+    </section>
+
+    <!-- Section 2: HTML5 Form -->
+    <section aria-labelledby="form-section">
+      <h2 id="form-section">Sign Up Form</h2>
+      <p>Fill in the form below to register for our upcoming web development training.</p>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="Enter your full name">
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required placeholder="example@email.com" autocomplete="email">
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="e.g. 08012345678" required>
+
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" min="10" max="100" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Course Preferences</legend>
+
+          <label for="course">Select Course:</label>
+          <select id="course" name="course" required>
+            <option value="">Choose a course...</option>
+            <option value="frontend">Frontend Development</option>
+            <option value="backend">Backend Development</option>
+            <option value="fullstack">Full Stack Development</option>
+          </select>
+
+          <label for="password">Create Password:</label>
+          <input type="password" id="password" name="password" required minlength="6" pattern="[A-Za-z0-9]{6,}" placeholder="At least 6 characters">
+
+          <label for="about">Tell us why you want to learn web development:</label>
+          <textarea id="about" name="about" rows="4" cols="40" placeholder="Your motivation..." required></textarea>
+        </fieldset>
+
+        <label>
+          <input type="checkbox" required> I agree to the terms and conditions.
+        </label>
+
+        <br><br>
+        <button type="submit">Register Now</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 PLP Academy — HTML5 Week 2 Assignment | Designed by Ahmad Aminu Bawa</p>
+  </footer>
+</body>
+</html>
